@@ -1,14 +1,14 @@
-A step-by-step guide to creating the Jenkins pipeline
+## A step-by-step guide to creating the Jenkins pipeline
 
 
-Why Jenkins Pipeline?
+## Why Jenkins Pipeline?
 Continuous Delivery (CD) is an essential part of DevOps Lifecycle.
 
 It makes sure that the software/application developers are creating is always production-ready. For this to happen, whenever the code gets updated, it needs to be built, tested, and deployed continuously. This is where Jenkins Pipeline comes into the picture.
 
 In DevOps, Continuous Integration and Continuous Delivery (CI/CD) is achieved through Jenkins Pipeline.  Using Jenkins Pipeline for CD helps to deliver the software with faster and frequent releases. This helps to incorporate the feedback in every next release.
 
-What is Jenkins Pipeline?
+## What is Jenkins Pipeline?
 Jenkins Pipeline is a combination of jobs to deliver software continuously using Jenkins.
 
 
@@ -23,13 +23,13 @@ Declarative – a new way of creating Jenkins Pipeline. Here you write groovy co
 Scripted – way of writing groovy code where the code is defined inside “node” blocks.
 Before we get into the demo, if you have not installed Jenkins, please install it first. Make sure you have Jenkins up and running on your system.
 
-Create a Jenkins Pipeline
+## Create a Jenkins Pipeline
 This is how a Jenkins pipeline flow looks like, which consists of multiple stages between developers creating a software (coding) and software delivered on production.
 
 
 ![1](https://user-images.githubusercontent.com/93249038/221332383-5dc82af0-81f5-485d-ab78-b9f32a9ed1cc.jpg)
 
-Jenkins Pipeline
+## Jenkins Pipeline
 Let’s create a declarative pipeline.
 
 ![2](https://user-images.githubusercontent.com/93249038/221332414-25da25fc-c1e5-4262-a434-81e10d56757f.jpg)
@@ -43,7 +43,7 @@ Click on the Pipeline tab as shown in the image below, and put your JenkinsFile 
 ![3](https://user-images.githubusercontent.com/93249038/221332436-7ff55614-22fa-40e9-89da-5739f378bac7.jpg)
 
 
-JenkinsFile Code
+## JenkinsFile Code
 pipeline {
 
          agent any
@@ -149,7 +149,7 @@ your build will be successful, and it shows a blue color for the build (#27). If
 Jenkins Build 27
 Now click on #27 build and then click on Console Output to check what exactly happened in the back-end when it ran.
 
-Jenkins Build
+## Jenkins Build
 
 This is how the output will look like ending with a SUCCESS message.
 
@@ -341,6 +341,6 @@ redis latest f7302e4ab3a8 2 months ago 98.2MB
 
 Mithun_mongodb latest 095d17727ca0 3 months ago 325MB
 
-Conclusion
+## Conclusion
 
 I hope this gives you an idea of Jenkins pipeline benefits and how you can create one. The above is a simple demonstration, and the best way to learn is by trying building complex pipelines.
